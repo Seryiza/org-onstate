@@ -1,3 +1,7 @@
+<p align="right">
+  <img width="200" height="200" alt="onstate-logo" src="https://github.com/user-attachments/assets/6ff9bf23-4686-4599-a011-200200a55914" />
+</p>
+
 # org-onstate
 
 Run ordinary Emacs Lisp functions when an Org heading enters a TODO state.
