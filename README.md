@@ -77,3 +77,7 @@ make check EMACS=/path/to/emacs
 ```
 
 Requires Emacs 28.1+ and Org 9.5+; tested with Emacs 30.2 / Org 9.7.11.
+
+---
+
+Developed by AI and me
