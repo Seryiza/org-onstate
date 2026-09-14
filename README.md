@@ -49,6 +49,20 @@ Multiple actions also fit on one physical property line:
 :ON_DONE: ((message "Laundry started") (org-onstate-schedule :id "hang-laundry" :after "1h" :state "TODO"))
 ```
 
+## Why org-onstate?
+
+- **Any TODO keyword:** `ON_NEXT`, `ON_WAITING`, `ON_DONE` — not just completion.
+- **Ordinary Elisp functions:** no separate action DSL; rules live on the heading.
+- **Minimal scope:** Org-only core; separate scheduling helpers; no timers or workflow framework.
+
+### Alternatives
+
+- [org-edna](https://www.nongnu.org/org-edna-el/): dependencies, DSL, TODO → DONE triggers. **org-onstate:** any state entry, ordinary functions.
+- [org-depend](https://orgmode.org/worg/org-contrib/org-depend.html): blockers, DONE-triggered task chains. **org-onstate:** per-state actions, no dependency rules.
+- [Org tag triggers](https://orgmode.org/manual/TODO-Basics.html): built-in tag changes. **org-onstate:** function calls beyond tags.
+
+Prefer Edna for dependency enforcement; built-in triggers for tags alone.
+
 ## Files
 
 - `org-onstate.el`: core mode and dispatcher; enough for your own functions.
